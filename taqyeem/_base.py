@@ -152,7 +152,7 @@ class TaqExperiment:
                 self._metrics.add(m_name)
         self._rebuild_result_data()
         self._results = self._results.append(results_record, ignore_index=True)
-        self._logger.info(f" = RESULTS = model: {model_name} - config: {configs} - metrics: {metrics} - hparams: {hparam}")
+        self._logger.debug(f" = RESULTS = model: {model_name} - config: {configs} - metrics: {metrics} - hparams: {hparam}")
 
     def generate_summary_report(self, selected_configs: Iterable = None, selected_metrics: Iterable = None, selected_hparams: Iterable = None):
         selected_configs = self.configs if selected_configs is None else selected_configs

@@ -30,14 +30,16 @@ setup(
     version=lib_ver,  # Required
     description='A python library for recording and reporting evaluation of ml models',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url='https://github.com/samehkamaleldin/taqyeem',
-    author='UniOpt',
+    author='Sameh K. Mohamed',
     author_email='sameh.kamaleldin@gmail.com',
-    keywords='evaluation',
+    keywords='evaluation logging ml',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     install_requires=[],
     extras_require={
         'dev': ['pytest', 'sphinx'],
         'test': ['pytest'],
-    }
+    },
+    python_requires='>=3.6'
 )
